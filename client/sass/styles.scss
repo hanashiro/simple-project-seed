@@ -1,0 +1,19 @@
+@import "1_settings/1_settings";
+@import "2_tools/2_tools";
+@import "3_generic/3_generic";
+@import "4_base/4_base";
+@import "5_objects/5_objects";
+@import "6_components/6_components";
+@import "7_trumps/7_trumps";
+
+/*
+
+Settings:   Global variables, config switches.
+Tools:      Default mixins and functions.
+Generic:    Ground-zero styles (Normalize.css, resets, box-sizing).
+Base:       Unclassed HTML elements (type selectors).
+Objects:    Cosmetic-free design patterns.
+Components: Designed components, chunks of UI.
+Trumps:     Helpers and overrides.
+
+*/
