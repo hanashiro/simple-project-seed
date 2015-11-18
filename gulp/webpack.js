@@ -12,6 +12,8 @@ gulp.task("webpack", function(callback) {
                 filename: "scripts.js" 
             },
             
+            devtool: 'source-map',
+            
             loaders: [
                 {
                     test: /\.jsx?$/,
