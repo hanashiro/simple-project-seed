@@ -14,11 +14,18 @@ gulp.task("webpack", function(callback) {
             
             devtool: 'source-map',
             
+            plugins: [ 
+                //new webpack.optimize.UglifyJsPlugin({minimize: true}) //uncomment if you want to uglify the output file
+            ],
+            
             loaders: [
                 {
                     test: /\.jsx?$/,
                     exclude: /(node_modules|bower_components)/,
-                    loader: 'babel' 
+                    loader: 'babel',
+                    query: {
+                    //    presets: ['es2015'] //uncomment if you want es2015 to ES5
+                    }
                 }
             ]
         
